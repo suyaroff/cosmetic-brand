@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cosmeticbrand :: Продукт</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		
+		<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+		<script type="text/javascript" src="js/cusel-min-2.3.5.js"></script>
+		<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+		<script type="text/javascript" src="js/slides.min.jquery.js"></script>
+		<script type="text/javascript" src="js/lib.js"></script>
+		<script type="text/javascript" src="_pages.js"></script>
+		
+	</head>
+	<body>
+		<div class="wrapper">
+			<div id="header">
+				<a href="/" class="logo" title=""></a>
+				<div class="phone">
+					+<b>7</b> (<b>495</b>) <b class="cl-black">960-60-60</b><br/>
+					<div class="fs12">Ежедневно с 9:00 до 22:00</div>
+				</div>
+
+				<form action="" class="search" method="get">
+					<div>
+						<input type="text" name="word" value="Введите слова для поиска" 
+							   onfocus="javascript:if(this.value == 'Введите слова для поиска') this.value=''"
+							   onblur="javascript:if(this.value == '') this.value='Введите слова для поиска'"/>
+						<input type="submit" name="submit" value=""/>
+					</div>
+				</form>
+				
+				<div class="cart cl-black fs12">
+					В корзине: 5 товаров<br/>
+					На сумму: <b class="fs18">17 600</b> руб.
+					
+					<a href="#" class="order"><img  src="images/icons/order.png" alt="Оформить заказ"/></a>
+				</div>
+				
+				<div class="user">
+					<a href="#">Регистрация</a> | 
+					<a href="#">Вход</a>
+				</div>
+			</div><!-- /header -->
+			<div id="sections">
+				Расскажите друзьям:
+				<a href="#"><img src="images/icons/twiter.jpg" alt="twitter"/></a>
+				<a href="#"><img src="images/icons/facebok.jpg" alt="facebook"/></a>
+				<a href="#"><img src="images/icons/vkontakte.jpg" alt="vkontakte"/></a>
+				&nbsp; &nbsp; &nbsp; &nbsp;
+				<a href="#" class="item">БРЕНДЫ</a>
+				<a href="#" class="item">ОПЛАТА И ДОСТАВКА</a>
+				<a href="#" class="item">СТАТЬИ</a>
+				<a href="#" class="item">СКИДКИ</a>
+				<a href="#" class="item">ОТЗЫВЫ</a>
+				<a href="#" class="item">КОНТАКТЫ</a>
+			</div><!-- /sections -->
+			
+			<div id="subsections">
+				<a href="#" style="margin-left:0px;" class="item">УХОД ЗА ЛИЦОМ</a>
+				<a href="#" class="item">УХОД ЗА волосами</a>
+				<a href="#" class="item">УХОД ЗА ТЕЛОМ</a>
+				<div class="item brands">
+					<select name="brands" id="brandList" class="custom" onchange="javascript:location='/#'+this.value;">
+						<option value="CHRISTINA">CHRISTINA</option>
+						<option value="GUAM">GUAM</option>
+						<option value="HOLY LAND">HOLY LAND</option>
+						<option value="JANSSEN">JANSSEN</option>
+						<option value="LOREAL">LOREAL</option>
+						<option value="SEXY HAIR">SEXY HAIR</option>
+					</select>
+				</div>
+			</div><!-- /subsections -->
+			
+			<!-- middle zone -->
+
+			<div id="product_page">
+				<div id="left-side">
+					<ul class="categories">
+						<li>
+							<a href="#">Все типы</a>
+						</li>
+						<li>
+							<a href="#">Раздел 2 уровня</a>
+						</li>
+						<li>
+							<a href="#">Раздел 2 уровня</a>
+							<ul>
+								<li>
+									<a href="#">Раздел 3 уровня</a>
+								</li>
+								<li>
+									<a href="#">Раздел 3 уровня</a>
+									<ul>
+										<li>
+											<a href="#" class="current">Раздел 4 уровня</a>
+										</li>
+										<li>
+											<a href="#">Раздел 4 уровня</a>
+										</li>
+										<li>
+											<a href="#">Раздел 4 уровня</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Раздел 3 уровня</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Раздел 2 уровня</a>
+						</li>
+						<li>
+							<a href="#">Раздел 2 уровня</a>
+						</li>
+						<li>
+							<a href="#">Раздел 2 уровня</a>
+						</li>
+						<li>
+							<a href="#">Раздел</a>
+						</li>
+					</ul>
+				</div><!-- /left-side -->
+				<div id="right-side">
+					<div style="height:60px; overflow: auto;">
+						<a href="#" class="go-top" style="padding:10px 25px; float: left;">К списку товаров</a>
+						<img src="images/brand/loreal.jpg" alt="loreal" style="float: right;"/>
+					</div>
+					<h2 class="name">Маска для лица L'OREAL PROFESSIONNEL Solar Sublime <span class="sku">[ АРТ. 023-56 ]</span></h2>
+					<h3 class="brand-name">L’Oréal Professionnel</h3>
+					<div class="image-frame">
+						<img src="images/tmp/tovar/1_big.jpg" alt="big"/>
+						<div class="label">
+							<div class="new"></div>
+							<div class="top"></div>
+							<div class="discount">5%</div>
+						</div>
+					</div>
+					<div class="all-info">
+						<ul class="tabs">
+							<li class="act" rel="description" onclick="select_product_tab(this);">описание</li>
+							<li rel="usage" onclick="select_product_tab(this);">способ применения</li>
+							<li rel="result" onclick="select_product_tab(this);">результат</li>
+							<li rel="sostav" onclick="select_product_tab(this);">состав</li>
+
+						</ul>
+						<div class="tab-content">
+							<div class="description item" style="display:block;">
+								Как вы защищаете свои волосы от солнца? Если вы покупаете средства для защиты волос, то покупаете всю серию или достаточно последней ступени — той, которая не смываемая? Что понравилось? Что разочаровало? Может есть какие-то народные рецепты и советы (помимо панамы).
+								Профессиональная серия средств L'Oreal Professionnel Serie Expert Solar Sublime разработана специально для надежной защиты волос от неблагоприятного воздействия ультрафиолетовых солнечных лучей.
+								В основе всех средств этой серии впервые используется инновационная технология — система MEXORYL S.O UV-PROTECT: надежный УФ-фильтр, защищающий все зоны волоса + производная витамина Е и глицерол + накапливаемый защитный эффект.
+							</div>
+							<div class="usage item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel condimentum mauris. Vivamus eget tortor tortor, a tristique diam. Vestibulum vitae lorem mi. Mauris faucibus, quam in rhoncus hendrerit, urna felis iaculis augue, ultrices convallis est felis sit amet odio. Curabitur non metus eu nisi elementum ullamcorper ac in erat. Phasellus nunc sem, porttitor ac euismod nec, congue at sapien. Nulla enim tellus, pretium vel pretium hendrerit, aliquet ac quam. Morbi lobortis, ligula eu vehicula venenatis, metus dui pellentesque arcu, nec tristique neque est at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut id lectus tortor, varius imperdiet libero. Aenean fringilla justo eu metus tincidunt eget tempor mi molestie. </div>
+							<div class="result item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel condimentum mauris. Vivamus eget tortor tortor, a tristique diam. Vestibulum vitae lorem mi. Mauris faucibus, quam in rhoncus hendrerit, urna felis iaculis augue, ultrices convallis est felis sit amet odio. Curabitur non metus eu nisi elementum ullamcorper ac in erat. Phasellus nunc sem, porttitor ac euismod nec, congue at sapien. Nulla enim tellus, pretium vel pretium hendrerit, aliquet ac quam. Morbi lobortis, ligula eu vehicula venenatis, metus dui pellentesque arcu, nec tristique neque est at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mu</div>
+							<div class="sostav item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel condimentum mauris. Vivamus eget tortor tortor, a tristique diam. Vestibulum vitae lorem mi. Mauris faucibus, quam in rhoncus hendrerit, urna felis iaculis augue, ultrices convallis est felis sit amet odio. Curabitur non metus eu nisi elementum ullamcorper ac in erat. Phasellus nunc sem, porttitor ac euismod nec, congue at sapien. Nulla enim tellus, pretium vel pretium hendrerit, aliquet ac quam. Morbi lobortis</div>
+						</div><!-- /end tab content -->
+						<table>
+							<tr>
+								<td>
+									<span class="ff-arial-narrow cl-black upper">Объем: <b class="fs16">450</b>  мл.</span>
+								</td>
+								<td style="width:23px;"></td>
+								<td>
+									<span class="in-stock">Есть в наличии</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="old-price" style="vertical-align:top;">
+									Старая цена:
+									<s>2 285 руб.</s>
+								</td>
+								<td></td>
+								<td style="vertical-align:bottom; line-height:40px;" >
+									<div class="price">
+									 1 269 <span class="fs12">руб.</span>
+									</div>
+								</td>
+							</tr>
+						</table>
+						<a href="#" class="add-to-cart"></a>
+					</div><!-- /info -->
+					<div class="clr" style="height: 26px;"></div>
+
+					<h2 class="block-title">ВМЕСТЕ С ЭТИМ ТОВАРОМ ПОКУПАЮТ</h2>
+					<table border="0" cellspacing="0" cellpadding="0" class="products">
+						<tr>
+							<td>
+								<div class="item">
+									<div class="center">
+										<img src="images/tmp/tovar/3.jpg" alt="tovar"/>
+									</div>
+									<div class="info">
+										<a href="#">МУСС ДЛЯ УМЫВАНИЯ INOA color TEC</a>
+										<span class="fs11">[ АРТ. 023-56 ]</span>
+										<div class="brand-name">L’Oréal Professionnel</div>
+										<div class="attr">ОБъем: 100мл.</div>
+										<div class="old-price">
+											Старая цена:<s><span class="fs14">3 259</span> руб.</s>
+										</div>
+										<div class="price">
+											3 155 <span class="fs12">руб.</span>
+											<div class="in-stock">Есть в наличии</div>
+										</div>
+										<div class="clr"></div>
+										<a href="#" class="add-to-cart"></a>
+									</div>
+									<div class="label">
+										<div class="discount">50%</div>
+										<div class="new"></div>
+										<div class="top"></div>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="item">
+									<div class="center">
+										<img src="images/tmp/tovar/4.jpg" alt="tovar"/>
+									</div>
+									<div class="info">
+										<a href="#">МУСС ДЛЯ УМЫВАНИЯ INOA color TEC</a>
+										<span class="fs11">[ АРТ. 023-56 ]</span>
+										<div class="brand-name">L’Oréal Professionnel</div>
+										<div class="attr">ОБъем: 100мл.</div>
+										<div class="old-price">
+											Старая цена:<s><span class="fs14">3 259</span> руб.</s>
+										</div>
+										<div class="price">
+											3 155 <span class="fs12">руб.</span>
+											<div class="in-stock">Есть в наличии</div>
+										</div>
+										<div class="clr"></div>
+										<a href="#" class="add-to-cart"></a>
+									</div>
+									<div class="label">
+										<div class="discount">50%</div>
+										<div class="new"></div>
+										<div class="top"></div>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="item">
+									<div class="center">
+										<img src="images/tmp/tovar/5.jpg" alt="tovar"/>
+									</div>
+									<div class="info">
+										<a href="#">МУСС ДЛЯ УМЫВАНИЯ INOA color TEC</a>
+										<span class="fs11">[ АРТ. 023-56 ]</span>
+										<div class="brand-name">L’Oréal Professionnel</div>
+										<div class="attr">ОБъем: 100мл.</div>
+										<div class="old-price">
+											Старая цена:<s><span class="fs14">3 259</span> руб.</s>
+										</div>
+										<div class="price">
+											3 155 <span class="fs12">руб.</span>
+											<div class="in-stock">Есть в наличии</div>
+										</div>
+										<div class="clr"></div>
+										<a href="#" class="add-to-cart"></a>
+									</div>
+									<div class="label">
+										<div class="discount">50%</div>
+										<div class="new"></div>
+										<div class="top"></div>
+									</div>
+
+								</div>
+							</td>
+						</tr>
+
+					</table><!-- / related products -->
+
+
+					<div class="tabs">
+	
+						<div class="tab act" onclick="tab_on_brand('brand_article', this)">СТАТЬЯ</div>
+
+						<div class="tab" onclick="tab_on_brand('otziv', this)">ОТЗЫВЫ</div>
+						<div class="clr"></div>
+					</div>
+					<div  class="additional-text" style="line-height:18px;">
+						<div id="brand_article">
+							<h2>Как правильно  выбрать средства для загара с учетом типа Вашей кожи ? </h2>
+													Компания начинает свою историю с 1975 года, когда друзья-студенты Гарварда Билл Гейтс и Пол Аллен, прочитав опубликованную 1 января 1975 года в журнале «Popular Electronics» статью о новом персональном компьютере Altair 8800, разработали для него интерпретатор языка Basic. Через месяц, 1 февраля, было подписано лицензионное соглашение с компанией Micro Instrumentation and Telemetry Systems  (MITS), производителем этого ПК, об использовании Basic в составе ПО для Altair.
+													<img src="images/tmp/article1.jpg" alt="werwer" style="float:left; margin:10px;"/>
+													В этом же году Билл Гейтс в письме к Аллену предложил название для их компании - англ. MICROcomputer SOFTware («программное обеспечение для микрокомпьютеров»), с написанием через дефис. Свой первый год новая компания, в которой работало три человека, закончила с оборотом $16 005. Сравните это с 2000 годом, в котором доходы корпорации составили 25,3 млрд долларов, а прибыль - более 7,3 млрд. Сравните это с 2000 годом, в котором доходы корпорации составили 25,3 млрд долларов.
+							В журнале «Popular Electronics» статью о новом персональном компьютере Altair 8800, разработали для него интерпретатор языка Basic. Через месяц, 1 февраля, было подписано лицензионное соглашение с компанией Micro Instrumentation and Telemetry Systems  (MITS), производителем этого ПК,.
+
+
+						</div>
+						<div id="otziv" style="display: none;">
+							<div class="item">
+
+								<div class="info" style="float: none;">
+									<p class="cl-black bold">АННА  |  Москва</p>
+									<p>25 мая 2011</p>
+									<p class="fs13">
+										Максимальная защита от UV излучения и свободных радикалов для светлой и
+										чувствительной кожи и в случае очень сильной солнечной активности.
+										Защищает от реакций на солнце (высыпаний, пигментных пятен, раздражения)
+										и преждевременного старения. Рекомендуется повторять нанесение после купания.
+									</p>
+								</div>
+								<div class="info" style="float: none;">
+									<p class="cl-black bold">АННА  |  Москва</p>
+									<p>25 мая 2011</p>
+									<p class="fs13">
+										Максимальная защита от UV излучения и свободных радикалов для светлой и
+										чувствительной кожи и в случае очень сильной солнечной активности.
+										Защищает от реакций на солнце (высыпаний, пигментных пятен, раздражения)
+										и преждевременного старения. Рекомендуется повторять нанесение после купания.
+									</p>
+								</div>
+								<div class="info" style="float: none;">
+									<p class="cl-black bold">АННА  |  Москва</p>
+									<p>25 мая 2011</p>
+									<p class="fs13">
+										Максимальная защита от UV излучения и свободных радикалов для светлой и
+										чувствительной кожи и в случае очень сильной солнечной активности.
+										Защищает от реакций на солнце (высыпаний, пигментных пятен, раздражения)
+										и преждевременного старения. Рекомендуется повторять нанесение после купания.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /additional-text -->
+					<div style="height:22px"></div>
+
+					<h2 class="block-title">ВЫ НЕДАВНО СМОТРЕЛИ</h2>
+					<table border="0" cellspacing="0" cellpadding="0" class="products">
+						<tr>
+							<td>
+								<div class="item">
+									<div class="center">
+										<img src="images/tmp/tovar/3.jpg" alt="tovar"/>
+									</div>
+									<div class="info">
+										<a href="#">МУСС ДЛЯ УМЫВАНИЯ INOA color TEC</a>
+										<span class="fs11">[ АРТ. 023-56 ]</span>
+										<div class="brand-name">L’Oréal Professionnel</div>
+										<div class="attr">ОБъем: 100мл.</div>
+										<div class="old-price">
+											Старая цена:<s><span class="fs14">3 259</span> руб.</s>
+										</div>
+										<div class="price">
+											3 155 <span class="fs12">руб.</span>
+											<div class="in-stock">Есть в наличии</div>
+										</div>
+										<div class="clr"></div>
+										<a href="#" class="add-to-cart"></a>
+									</div>
+									<div class="label">
+										<div class="discount">50%</div>
+										<div class="new"></div>
+										<div class="top"></div>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="item">
+									<div class="center">
+										<img src="images/tmp/tovar/4.jpg" alt="tovar"/>
+									</div>
+									<div class="info">
+										<a href="#">МУСС ДЛЯ УМЫВАНИЯ INOA color TEC</a>
+										<span class="fs11">[ АРТ. 023-56 ]</span>
+										<div class="brand-name">L’Oréal Professionnel</div>
+										<div class="attr">ОБъем: 100мл.</div>
+										<div class="old-price">
+											Старая цена:<s><span class="fs14">3 259</span> руб.</s>
+										</div>
+										<div class="price">
+											3 155 <span class="fs12">руб.</span>
+											<div class="in-stock">Есть в наличии</div>
+										</div>
+										<div class="clr"></div>
+										<a href="#" class="add-to-cart"></a>
+									</div>
+									<div class="label">
+										<div class="discount">50%</div>
+										<div class="new"></div>
+										<div class="top"></div>
+									</div>
+								</div>
+							</td>
+							<td>
+								<div class="item">
+									<div class="center">
+										<img src="images/tmp/tovar/5.jpg" alt="tovar"/>
+									</div>
+									<div class="info">
+										<a href="#">МУСС ДЛЯ УМЫВАНИЯ INOA color TEC</a>
+										<span class="fs11">[ АРТ. 023-56 ]</span>
+										<div class="brand-name">L’Oréal Professionnel</div>
+										<div class="attr">ОБъем: 100мл.</div>
+										<div class="old-price">
+											Старая цена:<s><span class="fs14">3 259</span> руб.</s>
+										</div>
+										<div class="price">
+											3 155 <span class="fs12">руб.</span>
+											<div class="in-stock">Есть в наличии</div>
+										</div>
+										<div class="clr"></div>
+										<a href="#" class="add-to-cart"></a>
+									</div>
+									<div class="label">
+										<div class="discount">50%</div>
+										<div class="new"></div>
+										<div class="top"></div>
+									</div>
+
+								</div>
+							</td>
+						</tr>
+
+					</table><!-- / related products -->
+
+				</div><!-- /right-side -->
+
+			</div><!-- /product_page -->
+
+			<!-- /middle zone -->
+			
+			<div id="footer">
+				<div class="copy">Copyright &copy 2011 <a href="#">Cosmeticbrand.ru</a> / Все права защищены.</div>
+				<div class="links">
+					<a href="#">Бренды</a> |
+					<a href="#">Оплата и доставка</a> |
+					<a href="#">Статьи</a> |
+					<a href="#">Скидки</a> |
+					<a href="#">Отзывы</a> |
+					<a href="#">Контакты</a> 
+				</div>
+			</div><!-- /footer -->
+		</div>
+	</body>
+</html>

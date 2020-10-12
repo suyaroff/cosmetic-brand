@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cosmeticbrand :: Корзина</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		
+		<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+		<script type="text/javascript" src="js/cusel-min-2.3.5.js"></script>
+		<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+		<script type="text/javascript" src="js/slides.min.jquery.js"></script>
+		<script type="text/javascript" src="js/lib.js"></script>
+		<script type="text/javascript" src="_pages.js"></script>
+		
+	</head>
+	<body>
+		<div class="wrapper">
+			<div id="header">
+				<a href="/" class="logo" title=""></a>
+				<div class="phone">
+					+<b>7</b> (<b>495</b>) <b class="cl-black">960-60-60</b><br/>
+					<div class="fs12">Ежедневно с 9:00 до 22:00</div>
+				</div>
+
+				<form action="" class="search" method="get">
+					<div>
+						<input type="text" name="word" value="Введите слова для поиска" 
+							   onfocus="javascript:if(this.value == 'Введите слова для поиска') this.value=''"
+							   onblur="javascript:if(this.value == '') this.value='Введите слова для поиска'"/>
+						<input type="submit" name="submit" value=""/>
+					</div>
+				</form>
+				
+				<div class="cart cl-black fs12">
+					В корзине: 5 товаров<br/>
+					На сумму: <b class="fs18">17 600</b> руб.
+					
+					<a href="#" class="order"><img  src="images/icons/order.png" alt="Оформить заказ"/></a>
+				</div>
+				
+				<div class="user">
+					<a href="#">Регистрация</a> | 
+					<a href="#">Вход</a>
+				</div>
+			</div><!-- /header -->
+			<div id="sections">
+				Расскажите друзьям:
+				<a href="#"><img src="images/icons/twiter.jpg" alt="twitter"/></a>
+				<a href="#"><img src="images/icons/facebok.jpg" alt="facebook"/></a>
+				<a href="#"><img src="images/icons/vkontakte.jpg" alt="vkontakte"/></a>
+				&nbsp; &nbsp; &nbsp; &nbsp;
+				<a href="#" class="item">БРЕНДЫ</a>
+				<a href="#" class="item">ОПЛАТА И ДОСТАВКА</a>
+				<a href="#" class="item">СТАТЬИ</a>
+				<a href="#" class="item">СКИДКИ</a>
+				<a href="#" class="item">ОТЗЫВЫ</a>
+				<a href="#" class="item">КОНТАКТЫ</a>
+			</div><!-- /sections -->
+			
+			<div id="subsections">
+				<a href="#" style="margin-left:0px;" class="item">УХОД ЗА ЛИЦОМ</a>
+				<a href="#" class="item">УХОД ЗА волосами</a>
+				<a href="#" class="item">УХОД ЗА ТЕЛОМ</a>
+				<div class="item brands">
+					<select name="brands" id="brandList" class="custom" onchange="javascript:location='/#'+this.value;">
+						<option value="CHRISTINA">CHRISTINA</option>
+						<option value="GUAM">GUAM</option>
+						<option value="HOLY LAND">HOLY LAND</option>
+						<option value="JANSSEN">JANSSEN</option>
+						<option value="LOREAL">LOREAL</option>
+						<option value="SEXY HAIR">SEXY HAIR</option>
+					</select>
+				</div>
+			</div><!-- /subsections -->
+			
+			<!-- middle zone -->
+			<div id="cart">
+				<div class="product-list">
+					<h2 class="title">Товаров в корзине</h2>
+					<table border="0">
+						<tr>
+							<td class="del">
+								<a href="#"><img src="images/icons/cross_red.png" alt="del"></a>
+							</td>
+							<td class="preview">
+								<img src="images/tmp/tovar/3.jpg" height="120" alt="p1" />
+							</td>
+							<td class="info">
+								<a class="product-name" href="#">МУСС ДЛЯ УМЫВАНИЯ INOA color TEC</a>
+								<span class="product-sku">[ АРТ. 023-56 ]</span>
+								<div class="product-brand">
+									L’Oréal Professionnel 
+								</div>
+								<span class="product-attr">Обьем 100 мл</span>
+								<span class="in-stock right"> есть в наличии</span>
+							</td>
+							<td class="price">
+								<div class="old-price">
+									Старая цена <s>3156 руб</s>
+								</div>
+								13 549 <span class="fs12">руб.</span>
+							</td>
+							<td class="num">
+								<p>
+									КОЛ-ВО:
+									<input type="text" name="num" value="1"/>
+								</p>
+								<a class="submit2">ОБНОВИТЬ</a>
+							</td>
+						</tr>
+						<tr><td class="delimetr" colspan="5"></td></tr>
+						<tr>
+							<td class="del">
+								<a href="#"><img src="images/icons/cross_red.png" alt="del"></a>
+							</td>
+							<td class="preview">
+								<img src="images/tmp/tovar/3.jpg" height="120" alt="p1" />
+							</td>
+							<td class="info">
+								<a class="product-name" href="#">МУСС ДЛЯ УМЫВАНИЯ INOA color TEC</a>
+								<span class="product-sku">[ АРТ. 023-56 ]</span>
+								<div class="product-brand">
+									L’Oréal Professionnel
+								</div>
+								<span class="product-attr">Обьем 100 мл</span>
+								<span class="in-stock right"> есть в наличии</span>
+							</td>
+							<td class="price">
+								<div class="old-price">
+									Старая цена <s>3156 руб</s>
+								</div>
+								13 549 <span class="fs12">руб.</span>
+							</td>
+							<td class="num">
+								<p>
+									КОЛ-ВО:
+									<input type="text" name="num" value="1"/>
+								</p>
+								<a class="submit2">ОБНОВИТЬ</a>
+							</td>
+						</tr>
+						<tr><td class="delimetr" colspan="5"></td></tr>
+						<tr>
+							<td class="del">
+								<a href="#"><img src="images/icons/cross_red.png" alt="del"></a>
+							</td>
+							<td class="preview">
+								<img src="images/tmp/tovar/3.jpg" height="120" alt="p1" />
+							</td>
+							<td class="info">
+								<a class="product-name" href="#">МУСС ДЛЯ УМЫВАНИЯ INOA color TEC</a>
+								<span class="product-sku">[ АРТ. 023-56 ]</span>
+								<div class="product-brand">
+									L’Oréal Professionnel
+								</div>
+								<span class="product-attr">Обьем 100 мл</span>
+								<span class="in-stock right"> есть в наличии</span>
+							</td>
+							<td class="price">
+								<div class="old-price">
+									Старая цена <s>3156 руб</s>
+								</div>
+								13 549 <span class="fs12">руб.</span>
+							</td>
+							<td class="num">
+								<p>
+									КОЛ-ВО:
+									<input type="text" name="num" value="1"/>
+								</p>
+								<a class="submit2">ОБНОВИТЬ</a>
+							</td>
+						</tr>
+						
+					</table>
+				</div><!-- /product-list -->
+				<div id="right-side">
+					<h2 class="title">СКИДКИ</h2>
+					<table border="0" class="discount-list">
+						<tr>
+							<td class="title">Сумма до, руб</td>
+							<td class="title">Скидка, %</td>
+						</tr>
+						<tr>
+							<td>3000</td>
+							<td><b>3</b></td>
+						</tr>
+						<tr>
+							<td>5000</td>
+							<td><b>4</b></td>
+						</tr>
+						<tr>
+							<td>10000</td>
+							<td><b>5</b></td>
+						</tr>
+						<tr>
+							<td>20000</td>
+							<td><b>7</b></td>
+						</tr>
+						<tr>
+							<td>40000</td>
+							<td><b>8</b></td>
+						</tr>
+						<tr>
+							<td>50000</td>
+							<td><b>10</b></td>
+						</tr>
+						<tr>
+							<td>70000</td>
+							<td><b>12</b></td>
+						</tr>
+						<tr>
+							<td>100000</td>
+							<td><b>15</b></td>
+						</tr>
+					</table>
+
+					<div class="counting">
+						Для бесплатной доставки доберите: <span class="fs24">600р.</span><br/>
+						Для получения скидки доберите: <span class="fs24">3900р.</span>
+						<div class="count" >
+							Стоимость: <span class="fs24">3900р.</span><br/>
+							Стоимость доставки: <span class="fs24">600р.</span><br/>
+							Скидка: <span class="fs24">500р.</span>
+
+
+						</div>
+						<span class="fs14">Итого:</span> <span class="fs30">4000р.</span>
+
+						<a class="pay_order" href="#">ОПЛАТИТЬ ЗАКАЗ</a>
+						<div class="clr"></div>
+						<span class="fs12" style="color:#808080;">Нажмите эту кнопку для оформления заказа</span>
+					</div>
+				</div><!-- /right-side -->
+				<div class="clr" style="height: 10px;"></div>
+				
+				<h2 class="block-title" style="width:946px;">ВМЕСТЕ С ЭТИМИ ТОВАРАМИ ПОКУПАЮТ</h2>
+				<table border="0" cellspacing="0" cellpadding="0" class="products">
+					<tr>
+						<td>
+							<div class="item">
+								<div class="center">
+									<img src="images/tmp/tovar/3.jpg" alt="tovar"/>
+								</div>
+								<div class="info">
+									<a href="#">МУСС ДЛЯ УМЫВАНИЯ INOA color TEC</a>
+									<span class="fs11">[ АРТ. 023-56 ]</span>
+									<div class="brand-name">L’Oréal Professionnel</div>
+									<div class="attr">ОБъем: 100мл.</div>
+									<div class="old-price">
+										Старая цена:<s><span class="fs14">3 259</span> руб.</s>
+									</div>
+									<div class="price">
+										3 155 <span class="fs12">руб.</span>
+										<div class="in-stock">Есть в наличии</div>
+									</div>
+									<div class="clr"></div>
+									<a href="#" class="add-to-cart"></a>
+								</div>
+								<div class="label">
+									<div class="discount">50%</div>
+									<div class="new"></div>
+									<div class="top"></div>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="item">
+								<div class="center">
+									<img src="images/tmp/tovar/3.jpg" alt="tovar"/>
+								</div>
+								<div class="info">
+									<a href="#">МУСС ДЛЯ УМЫВАНИЯ INOA color TEC</a>
+									<span class="fs11">[ АРТ. 023-56 ]</span>
+									<div class="brand-name">L’Oréal Professionnel</div>
+									<div class="attr">ОБъем: 100мл.</div>
+									<div class="old-price">
+										Старая цена:<s><span class="fs14">3 259</span> руб.</s>
+									</div>
+									<div class="price">
+										3 155 <span class="fs12">руб.</span>
+										<div class="in-stock">Есть в наличии</div>
+									</div>
+									<div class="clr"></div>
+									<a href="#" class="add-to-cart"></a>
+								</div>
+								<div class="label">
+									<div class="discount">50%</div>
+									<div class="new"></div>
+									<div class="top"></div>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="item">
+								<div class="center">
+									<img src="images/tmp/tovar/3.jpg" alt="tovar"/>
+								</div>
+								<div class="info">
+									<a href="#">МУСС ДЛЯ УМЫВАНИЯ INOA color TEC</a>
+									<span class="fs11">[ АРТ. 023-56 ]</span>
+									<div class="brand-name">L’Oréal Professionnel</div>
+									<div class="attr">ОБъем: 100мл.</div>
+									<div class="old-price">
+										Старая цена:<s><span class="fs14">3 259</span> руб.</s>
+									</div>
+									<div class="price">
+										3 155 <span class="fs12">руб.</span>
+										<div class="in-stock">Есть в наличии</div>
+									</div>
+									<div class="clr"></div>
+									<a href="#" class="add-to-cart"></a>
+								</div>
+								<div class="label">
+									<div class="discount">50%</div>
+									<div class="new"></div>
+									<div class="top"></div>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="item">
+								<div class="center">
+									<img src="images/tmp/tovar/3.jpg" alt="tovar"/>
+								</div>
+								<div class="info">
+									<a href="#">МУСС ДЛЯ УМЫВАНИЯ INOA color TEC</a>
+									<span class="fs11">[ АРТ. 023-56 ]</span>
+									<div class="brand-name">L’Oréal Professionnel</div>
+									<div class="attr">ОБъем: 100мл.</div>
+									<div class="old-price">
+										Старая цена:<s><span class="fs14">3 259</span> руб.</s>
+									</div>
+									<div class="price">
+										3 155 <span class="fs12">руб.</span>
+										<div class="in-stock">Есть в наличии</div>
+									</div>
+									<div class="clr"></div>
+									<a href="#" class="add-to-cart"></a>
+								</div>
+								<div class="label">
+									<div class="discount">50%</div>
+									<div class="new"></div>
+									<div class="top"></div>
+								</div>
+							</div>
+						</td>
+						
+					</tr>
+				</table>
+			</div><!-- /cart -->
+			<!-- /middle zone -->
+			
+			<div id="footer">
+				<div class="copy">Copyright &copy 2011 <a href="#">Cosmeticbrand.ru</a> / Все права защищены.</div>
+				<div class="links">
+					<a href="#">Бренды</a> |
+					<a href="#">Оплата и доставка</a> |
+					<a href="#">Статьи</a> |
+					<a href="#">Скидки</a> |
+					<a href="#">Отзывы</a> |
+					<a href="#">Контакты</a> 
+				</div>
+			</div><!-- /footer -->
+		</div>
+	</body>
+</html>

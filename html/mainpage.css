@@ -1,0 +1,179 @@
+/* 
+    Document   : mainpage
+    Created on : 15.07.2011, 12:04:35
+    Author     : Djamal Suyarov suyaroff@gmail.com www.suyaroff.ru 
+    Description:
+        Стили для главной страницы
+*/
+
+/* баннер */
+#main-page-banner { 
+    background:url("images/banner.jpg");
+	height:463px;
+	position:relative;
+	margin: 0 0 20px 0;
+
+}
+
+#main-page-banner .slogan{
+	position:absolute;
+	top:73px;
+	left:46px;
+	text-align:center;
+	color:#000;
+	text-transform:uppercase;
+	font-family:"Arial Narrow", Tahoma;
+	display:none;
+}
+
+/* скролл для брендов*/
+#brand-scroll{
+	height:66px;
+	overflow:hidden;
+	width:100%;
+	margin:20px 0 0 0;
+	white-space:nowrap;
+	
+}
+
+#brand-scroll .jspHorizontalBar{
+	height:5px;
+	padding:1px;
+	background:#d5d5d5;
+}
+#brand-scroll .jspTrack{background:#fff; width:972px !important}
+#brand-scroll .jspDrag{background:#2d2d2d;}
+#brand-scroll .jspTrack, #brand-scroll .jspDrag{height:5px;}
+
+/* линия скидок */
+#discount-bar{
+	margin:14px 0px;
+	height:25px;
+	overflow:hidden;
+	
+}
+
+#discount-bar .bar{
+	background:url("images/bg/discount-bar.gif") repeat-x;
+	color:#000;
+	border-left:1px solid #dcd9d9;
+	height:100%;
+	float:left;
+	display:inline;
+	border-radius:3px;
+	padding: 0 0 0 9px;
+	margin:0 5px 0 0;
+}
+
+#discount-bar .bar .sum{
+	float:left;
+	display:inline;
+	line-height:25px;
+	height:100%;
+	padding:0 18px 0 0;
+	margin:0 11px 0 0;
+	font-family:Arial;
+	font-size:14px;
+	background:url("images/icons/rub.png") no-repeat right center;
+	text-shadow: 1px 0px 0px #dbdbdb;
+}
+
+#discount-bar .bar .percent{
+	background-image: url("images/icons/product-sprite.png");
+	background-repeat:no-repeat;
+	background-position:0 0;
+	width:35px;
+	height:25px;
+	overflow:hidden;
+	float:left;
+	color:#ffffff;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+}
+
+/* Статьи */
+#articles-bottom {
+	background:#666666;
+	padding:19px;
+	color:#fff;
+}
+
+#articles-bottom .article-slider{
+	float:left;
+	width:307px;
+	margin:0 49px 0 0;
+	display:inline;
+	overflow:hidden;
+}
+#articles-bottom .article-slider .slides_container .slides_control{
+	height:300px !important;
+}
+
+
+
+#articles-bottom .article-slider .article{
+	float:left;
+	width:307px;
+}
+#articles-bottom .article-slider .article h2{
+	font-weight:normal;
+	font-size:17px;
+	margin:13px 0;
+}
+
+#articles-bottom .article-slider .navigate{padding:10px 0; text-align:center;}
+#articles-bottom .article-slider a{
+	color:#fff;
+}
+
+#articles-bottom .article-slider .navigate .prev{
+	background:url("images/icons/arrow-white-left.png") no-repeat left;
+	padding-left:11px;
+	float:left;
+
+}
+#articles-bottom .article-slider .next{
+	background:url("images/icons/arrow-white-right.png") no-repeat right;
+	padding-right:11px;
+	float:right;
+}
+
+#articles-bottom .sections{
+	width: 580px;
+	float:left;
+	display:inline;
+	overflow:hidden;
+	margin: 0 ;
+}
+#articles-bottom .sections ul{
+	margin:0 27px 0 0;
+	padding:0px;
+	list-style:none;
+	float:left;
+	display:inline;
+	width:175px;
+	
+}
+#articles-bottom .sections ul li.title{
+	height:43px;
+	font-weight:bold;
+	padding:7px 0 0 15px;
+	background:url("images/bg/article-bottom-title.gif") no-repeat;
+	text-transform:uppercase;
+}
+
+#articles-bottom .sections ul li{
+	background:url("images/icons/arrow-grey-right.png") no-repeat 5px 11px;
+	padding:7px 0 7px 15px;
+	position:relative;
+}
+
+#articles-bottom .sections ul li a{
+	color:#fff;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+#articles-bottom .sections ul li sup{
+	cursor:help;
+}
